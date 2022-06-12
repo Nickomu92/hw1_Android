@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+
+        <TextView
+                android:id="@+id/tvOperationField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/dark_grey"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:id="@+id/tvResultField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:maxLines="1"
+                android:textColor="@color/tomato"
+                android:textSize="26sp"/>
+    </LinearLayout>
+
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="9"
+            android:rowCount="4"
+            android:layout_alignParentBottom="true">
+
+        <Button
+                android:id="@+id/btnSin"
+                style="@style/optionButton"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="sin"/>
+
+        <Button
+                android:id="@+id/btnPi"
+                style="@style/optionButton"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="pi"/>
+
+        <Button
+                android:id="@+id/btnFact"
+                style="@style/optionButton"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:text="x!"/>
+
+        <Button
+                android:id="@+id/btnXp3"
+                style="@style/optionButton"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:text="x&#179;"/>
+
+        <Button
+                android:id="@+id/btnSeven"
+                style="@style/digitButton"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:text="7"/>
+
+        <Button
+                android:id="@+id/btnEight"
+                style="@style/digitButton"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:text="8"/>
+
+        <Button
+                android:id="@+id/btnNine"
+                style="@style/digitButton"
+                android:layout_row="0"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:text="9"/>
+
+        <Button
+                android:id="@+id/btnDivision"
+                style="@style/optionButton"
+                android:layout_row="0"
+                android:layout_column="7"
+                android:layout_columnWeight="1"
+                android:text="/"/>
+
+        <Button
+                android:id="@+id/btnMultiplication"
+                style="@style/optionButton"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:layout_columnWeight="1"
+                android:text="*"/>
+
+        <Button
+                android:id="@+id/btnCos"
+                style="@style/optionButton"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="cos"/>
+
+        <Button
+                android:id="@+id/btnE"
+                style="@style/optionButton"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="e"/>
+
+        <Button
+                android:id="@+id/btnAbs"
+                style="@style/optionButton"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:text="|x|"/>
+
+        <Button
+                android:id="@+id/btnXp2"
+                style="@style/optionButton"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:text="x&#178;"/>
+
+        <Button
+                android:id="@+id/btnFour"
+                style="@style/digitButton"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:text="4"/>
+
+        <Button
+                android:id="@+id/btnFive"
+                style="@style/digitButton"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:text="5"/>
+
+        <Button
+                android:id="@+id/btnSix"
+                style="@style/digitButton"
+                android:layout_row="1"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:text="6"/>
+
+        <Button
+                android:id="@+id/btnClearAll"
+                style="@style/clearButton"
+                android:layout_row="1"
+                android:layout_column="7"
+                android:layout_columnWeight="1"
+                android:text="CA"/>
+
+        <Button
+                android:id="@+id/btnSubtraction"
+                style="@style/optionButton"
+                android:layout_row="1"
+                android:layout_column="8"
+                android:layout_columnWeight="1"
+                android:text="-"/>
+
+        <Button
+                android:id="@+id/btnTan"
+                style="@style/optionButton"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="tan" android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btnLeftBracket"
+                style="@style/optionButton"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="("/>
+
+        <Button
+                android:id="@+id/btnLog"
+                style="@style/optionButton"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:text="log"/>
+
+        <Button
+                android:id="@+id/btnXp1d3"
+                style="@style/optionButton"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:text="&#8731;"/>
+
+        <Button
+                android:id="@+id/btnOne"
+                style="@style/digitButton"
+                android:layout_row="2"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:text="1"/>
+
+        <Button
+                android:id="@+id/btnTwo"
+                style="@style/digitButton"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:text="2"/>
+
+        <Button
+                android:id="@+id/btnThree"
+                style="@style/digitButton"
+                android:layout_row="2"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:text="3"/>
+
+        <Button
+                android:id="@+id/btnPercent"
+                style="@style/optionButton"
+                android:layout_row="2"
+                android:layout_column="7"
+                android:layout_columnWeight="1"
+                android:text="%"/>
+
+        <Button
+                android:id="@+id/btnAddition"
+                style="@style/optionButton"
+                android:layout_row="2"
+                android:layout_column="8"
+                android:layout_columnWeight="1"
+                android:text="+"/>
+
+        <Button
+                android:id="@+id/btnCot"
+                style="@style/optionButton"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="cot"/>
+
+        <Button
+                android:id="@+id/btnRightBracket"
+                style="@style/optionButton"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text=")"/>
+
+        <Button
+                android:id="@+id/btnLn"
+                style="@style/optionButton"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:text="ln"/>
+
+        <Button
+                android:id="@+id/btnXp1d2"
+                style="@style/optionButton"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:text="&#8730;"/>
+
+        <Button
+                android:id="@+id/btnMathSign"
+                style="@style/optionButton"
+                android:layout_row="3"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:text="+/-"/>
+
+        <Button
+                android:id="@+id/btnZero"
+                style="@style/digitButton"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:text="0"/>
+
+        <Button
+                android:id="@+id/btnPoint"
+                style="@style/optionButton"
+                android:layout_row="3"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:text=","/>
+
+        <Button
+                android:id="@+id/btnClearSymbol"
+                style="@style/clearButton"
+                android:layout_row="3"
+                android:layout_column="7"
+                android:layout_columnWeight="1"
+                android:text="CS"/>
+
+        <Button
+                android:id="@+id/btnEqual"
+                style="@style/optionButton"
+                android:layout_row="3"
+                android:layout_column="8"
+                android:layout_columnWeight="1"
+                android:text="="/>
+    </GridLayout>
+
+</RelativeLayout>
